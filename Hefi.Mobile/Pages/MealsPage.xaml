@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hefi.Mobile.Pages.MealsPage"
+             Title="Meals">
+    <VerticalStackLayout Padding="16" Spacing="10">
+        <Button Text="Add Meal" Clicked="OnAddClicked" />
+        <CollectionView x:Name="MealsList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="12" Margin="0,6" HasShadow="True">
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="{Binding EatenAt, StringFormat='{}{0:yyyy-MM-dd HH:mm}'}"
+                     FontAttributes="Bold"/>
+                            <Label Text="{Binding TotalKcal, StringFormat='Calories: {0} kcal'}"/>
+                            <Label Text="{Binding TotalProtein, StringFormat='Protein: {0} g'}"/>
+                            <Label Text="{Binding TotalCarbs, StringFormat='Carbs: {0} g'}"/>
+                            <Label Text="{Binding TotalFat, StringFormat='Fat: {0} g'}"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

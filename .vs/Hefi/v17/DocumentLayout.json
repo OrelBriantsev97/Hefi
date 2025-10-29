@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\orelb\\Documents\\Hefi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66B21507-55B2-7DE3-ECF7-CD01F0F3BA71}|Hefi.Mobile\\Hefi.Mobile.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.mobile\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B21507-55B2-7DE3-ECF7-CD01F0F3BA71}|Hefi.Mobile\\Hefi.Mobile.csproj|solutionrelative:hefi.mobile\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B21507-55B2-7DE3-ECF7-CD01F0F3BA71}|Hefi.Mobile\\Hefi.Mobile.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.mobile\\models\\meals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B21507-55B2-7DE3-ECF7-CD01F0F3BA71}|Hefi.Mobile\\Hefi.Mobile.csproj|solutionrelative:hefi.mobile\\models\\meals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B21507-55B2-7DE3-ECF7-CD01F0F3BA71}|Hefi.Mobile\\Hefi.Mobile.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.mobile\\models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B21507-55B2-7DE3-ECF7-CD01F0F3BA71}|Hefi.Mobile\\Hefi.Mobile.csproj|solutionrelative:hefi.mobile\\models\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.api\\dtos\\workoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|solutionrelative:hefi.api\\dtos\\workoutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|solutionrelative:hefi.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.api\\dtos\\fooddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|solutionrelative:hefi.api\\dtos\\fooddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.api\\dtos\\mealdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|solutionrelative:hefi.api\\dtos\\mealdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|c:\\users\\orelb\\documents\\hefi\\hefi.api\\endpoints\\workoutendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6901AA1-9963-7D90-5DFC-D78FB3BE333C}|Hefi.Api\\Hefi.Api.csproj|solutionrelative:hefi.api\\endpoints\\workoutendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Mobile\\Models\\Token.cs",
+              "RelativeDocumentMoniker": "Hefi.Mobile\\Models\\Token.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Mobile\\Models\\Token.cs",
+              "RelativeToolTip": "Hefi.Mobile\\Models\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:16:51.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Meals.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Mobile\\Models\\Meals.cs",
+              "RelativeDocumentMoniker": "Hefi.Mobile\\Models\\Meals.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Mobile\\Models\\Meals.cs",
+              "RelativeToolTip": "Hefi.Mobile\\Models\\Meals.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:15:43.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkoutDto.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\WorkoutDto.cs",
+              "RelativeDocumentMoniker": "Hefi.Api\\Dtos\\WorkoutDto.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\WorkoutDto.cs",
+              "RelativeToolTip": "Hefi.Api\\Dtos\\WorkoutDto.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:14:14.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\UserDto.cs",
+              "RelativeDocumentMoniker": "Hefi.Api\\Dtos\\UserDto.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\UserDto.cs",
+              "RelativeToolTip": "Hefi.Api\\Dtos\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:13:38.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FoodDto.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\FoodDto.cs",
+              "RelativeDocumentMoniker": "Hefi.Api\\Dtos\\FoodDto.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\FoodDto.cs",
+              "RelativeToolTip": "Hefi.Api\\Dtos\\FoodDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:13:36.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FoodItem.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Mobile\\Models\\FoodItem.cs",
+              "RelativeDocumentMoniker": "Hefi.Mobile\\Models\\FoodItem.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Mobile\\Models\\FoodItem.cs",
+              "RelativeToolTip": "Hefi.Mobile\\Models\\FoodItem.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswBYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:10:23.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MealDto.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\MealDto.cs",
+              "RelativeDocumentMoniker": "Hefi.Api\\Dtos\\MealDto.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Dtos\\MealDto.cs",
+              "RelativeToolTip": "Hefi.Api\\Dtos\\MealDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:07:27.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WorkoutEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Endpoints\\WorkoutEndpoints.cs",
+              "RelativeDocumentMoniker": "Hefi.Api\\Endpoints\\WorkoutEndpoints.cs",
+              "ToolTip": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Endpoints\\WorkoutEndpoints.cs",
+              "RelativeToolTip": "Hefi.Api\\Endpoints\\WorkoutEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T11:02:23.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

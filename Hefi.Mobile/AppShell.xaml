@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Hefi.Mobile.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:Hefi.Mobile.Pages">
+
+    <!-- Define routes -->
+    <ShellContent
+        Title="Loading"
+        ContentTemplate="{DataTemplate pages:LoadingPage}" />
+</Shell>

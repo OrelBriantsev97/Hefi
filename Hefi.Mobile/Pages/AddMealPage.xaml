@@ -1,0 +1,41 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hefi.Mobile.Pages.AddMealPage"
+             Title="Add Meal">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <!-- Search entry -->
+        <Entry Placeholder="Search food"
+               Text="{Binding SearchQuery}"
+               ReturnType="Search"
+               ReturnCommand="{Binding SearchCommand}" />
+
+        <!-- Manual Search button -->
+        <Button Text="Search"
+                Command="{Binding SearchCommand}" />
+
+        <!-- Results list -->
+        <CollectionView x:Name="FoodResults"
+                        ItemsSource="{Binding Foods}"
+                        SelectionMode="Single"
+                        SelectionChangedCommand="{Binding SelectFoodCommand}"
+                        SelectionChangedCommandParameter="{Binding SelectedItem, Source={x:Reference FoodResults}}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Description}" Padding="5" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Grams input (optional if user adds manually) -->
+        <Entry Placeholder="Grams"
+               Keyboard="Numeric"
+               Text="{Binding Grams}" />
+
+        <!-- Save button -->
+        <Button Text="Save Meal"
+                Command="{Binding AddMealCommand}" />
+
+    </VerticalStackLayout>
+</ContentPage>

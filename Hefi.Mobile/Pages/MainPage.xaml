@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hefi.Mobile.Pages.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+
+            <Grid HeightRequest="200">
+                <Image Source="hefibg.png"
+                        Aspect="AspectFill"
+                        Opacity="0.9" />
+                
+                <Label Text="{Binding Greeting}" FontSize="18" FontAttributes="Bold"
+                        TextColor="#216657"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,10"/>
+                     
+                
+
+
+                <Grid Padding="20"
+                      ColumnDefinitions="*,*,*"
+                      VerticalOptions="Center"
+                      HorizontalOptions="Fill" Margin="0,40,0,0">
+
+                    
+                    <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                        <Image Source="workout.png" HeightRequest="40" WidthRequest="40"/>
+                        <Label Text="{Binding WorkoutKcalToday, TargetNullValue=0, FallbackValue=0}"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Workout kcal"
+                               FontSize="14"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+                    <!-- Meal Calories -->
+                    <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="4">
+                        <Image Source="meal.png" HeightRequest="40" WidthRequest="40"/>
+                        <Label Text="{Binding MealKcalToday, TargetNullValue=0, FallbackValue=0}"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Meal kcal"
+                               FontSize="14"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+                    <!-- Water (placeholder with StepsToday) -->
+                    <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" Spacing="4">
+                        <Image Source="cup.png" HeightRequest="40" WidthRequest="40"/>
+                        <Label Text="{Binding StepsToday, TargetNullValue=0, FallbackValue=0}"
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Water Cups"
+                               FontSize="14"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Grid>
+
+            <!-- 🔹 Bottom section: Buttons with light green background -->
+            <Grid BackgroundColor="#E8F5E9"
+                  Padding="20"
+                  ColumnDefinitions="*,*"
+                  ColumnSpacing="0"
+                  HeightRequest="120">
+
+                <Button Text="Add Meal"
+                        Command="{Binding AddMealCommand}"
+                        BackgroundColor="#4db6ac"
+                        TextColor="White"
+                        CornerRadius="20"
+                        HeightRequest="90"
+                        WidthRequest="120"
+                        Grid.Column="0"/>
+
+                <Button Text="Add Workout"
+                        Command="{Binding AddWorkoutCommand}"
+                        BackgroundColor="#4db6ac"
+                        TextColor="White"
+                        CornerRadius="20"
+                        HeightRequest="90"
+                        WidthRequest="120"
+                        Grid.Column="1"/>
+            </Grid>
+
+            <Frame HeightRequest="70"
+                   Padding="12"
+                   BackgroundColor="#E8F5E9"
+                   CornerRadius="12"
+                   HasShadow="False">
+                <Label Text="{Binding DailyTip}"
+                       FontSize="16"
+                       TextColor="#555"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       LineBreakMode="WordWrap"/>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hefi.Mobile.Pages.FoodAmountPopup"
+             Title="Add Food">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label x:Name="FoodLabel" FontAttributes="Bold" FontSize="18" />
+
+        <!-- Amount input -->
+        <Entry x:Name="AmountEntry" Placeholder="Enter amount" Keyboard="Numeric" />
+
+        <!-- Dropdown for unit -->
+        <Picker x:Name="UnitPicker" Title="Select unit">
+            <Picker.Items>
+                <x:String>grams</x:String>
+                <x:String>ml</x:String>
+                <x:String>cups</x:String>
+                <x:String>units</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <HorizontalStackLayout Spacing="15">
+            <Button Text="Cancel" Clicked="OnCancelClicked" />
+            <Button Text="Add Meal" Clicked="OnAddClicked" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

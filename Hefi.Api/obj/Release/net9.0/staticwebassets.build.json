@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "xKPOpZAizX4e8zvhBSIVvAP7KaKYgIrNEWc6nd1dapU=",
+  "Source": "Hefi.Api",
+  "BasePath": "_content/Hefi.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

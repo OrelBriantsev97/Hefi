@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: hefi-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: hefi
+      POSTGRES_PASSWORD: hefi_password
+      POSTGRES_DB: hefi_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    container_name: hefi-adminer
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+volumes:
+  dbdata:
