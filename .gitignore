@@ -1,0 +1,15 @@
+# Visual Studio temporary files, build results, and cache
+.vs/
+bin/
+obj/
+Debug/
+Release/
+*.user
+*.suo
+*.vsidx
+*.dbmdl
+*.log
+
+# MAUI build outputs
+Platforms/
+AppPackages/
