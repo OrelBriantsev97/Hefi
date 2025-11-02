@@ -22,6 +22,9 @@ C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccataly
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\zxing.dll
+C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ZXing.Net.MAUI.dll
+C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ZXing.Net.MAUI.Controls.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\cs\Microsoft.Maui.Controls.resources.dll
@@ -273,9 +276,9 @@ C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccataly
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
-C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\meal.png
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\workout.png
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\cup.png
+C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\meal.png
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\hefibg.png
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
@@ -302,6 +305,7 @@ C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccataly
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Hefi.Mobile.AssemblyInfoInputs.cache
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Hefi.Mobile.AssemblyInfo.cs
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Hefi.Mobile.csproj.CoreCompileInputs.cache
+C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Hefi.Mobile.sourcelink.json
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\XamlC.stamp
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Hefi.Mob.14CCECFC.Up2Date
 C:\Users\orelb\Documents\Hefi\Hefi.Mobile\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\Hefi.Mobile.dll

@@ -8,14 +8,13 @@ namespace Hefi.Mobile.Pages;
 public partial class AddMealPage : ContentPage
 {
     // Initializes the page and binds it to its view model
-    public AddMealPage()
+    public AddMealPage(AddMealViewModel vm)
     {
-        InitializeComponent(); 
+        InitializeComponent();
+        BindingContext = vm;
+        
 
-        var sp = Application.Current?.Handler?.MauiContext?.Services
-                 ?? throw new InvalidOperationException("ServiceProvider unavailable");
 
-        BindingContext = sp.GetRequiredService<AddMealViewModel>();
     }
 
 }

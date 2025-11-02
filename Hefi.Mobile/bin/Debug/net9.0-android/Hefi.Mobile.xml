@@ -4,11 +4,118 @@
         <name>Hefi.Mobile</name>
     </assembly>
     <members>
+        <member name="T:Hefi.Mobile.MauiProgram">
+            <summary>
+            builds app host , fonts,DI and services
+            </summary>
+        </member>
+        <member name="M:Hefi.Mobile.MauiProgram.CreateMauiApp">
+            
+        </member>
+        <member name="T:Hefi.Mobile.Pages.BarcodeScanPage">
+            <summary>
+            enables barcode scanning using the device camera. allowing users to scan
+            product barcodes and retrieve food data automatically.
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.Pages.MainPage">
+            <summary>
+            home page , binds to MainViewModel and loads today's data
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.Pages.MealsPage">
+            <summary>
+            Meals listing page- displays the user's meals and navigates to AddMealPage to add a new meal.
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.Pages.SignUpPage">
+            <summary>
+            Sign-up page -  Collects user credentials, calls IAuthService.RegisterAsync
+            and on success replaces the app root with MainPage
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.Pages.WorkoutsPage">
+            <summary>
+            workoutPage -  Displays the user's logged workouts and navigate to AddWorkoutPage to create a new workout entry.
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.Services.AuthHttpHandler">
+            <summary>
+            HTTP handler that attaches users tokens to outgoing requests
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.Services.AuthService">
+            <summary>
+            Handles all authentication operations including registration, login, token refresh, and logout.  
+            Uses ITokenService for secure token storage and a DI-provided
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.Services.TokenService">
+            <summary>
+            Provides secure storage and retrieval of authentication tokens using SecureStorage/>.
+            This service is registered as a singleton and used by the authentication flow and HTTP handlers.
+            </summary>
+        </member>
+        <member name="M:Hefi.Mobile.Services.TokenService.SaveAsync(Hefi.Mobile.Models.Token)">
+            Saves the given token pair (access + refresh) securely in SecureStorage
+        </member>
+        <member name="M:Hefi.Mobile.Services.TokenService.ClearAsync">
+            load the stored token pair from SecureStorage, or null if not found
+        </member>
+        <member name="T:Hefi.Mobile.Services.WorkoutsService">
+            <summary>
+            Service class responsible for interacting with the backend API's workout endpoints.
+            Handles fetching, creation, and daily calorie totals.
+            </summary>
+        </member>
+        <member name="T:Hefi.Mobile.ViewModels.AddMealViewModel">
+            <summary>
+            ViewModel for the "Add Meal" flow.
+            Handles food search, selection, and creates a meal via MealsService.
+            </summary>
+        </member>
+        <member name="M:Hefi.Mobile.ViewModels.AddMealViewModel.#ctor(System.Net.Http.HttpClient,MealsService)">
+            <param name="http">HttpClient for public food search endpoints.</param>
+            <param name="meals">Meals service for adding meals to the backend.</param>
+        </member>
+        <member name="T:Hefi.Mobile.ViewModels.MainViewModel">
+            <summary>
+            The main dashboard ViewModel for the mobile app.
+            Loads today's info(steps , meal kcal , workout kcal),
+            exposes a daily wellness tip, and provides navigation commands to add items.
+            </summary>
+        </member>
+        <member name="M:Hefi.Mobile.ViewModels.MainViewModel.#ctor(Hefi.Mobile.Services.IAuthService,MealsService,Hefi.Mobile.Services.WorkoutsService,System.IServiceProvider)">
+            <summary>
+            initallize main view model
+            </summary>
+            <param name="auth">Authentication service (login/refresh/etc.).</param>
+            <param name="meals">Service for meals and nutrition endpoints.</param>
+            <param name="workouts">Service for workout endpoints.</param>
+            <param name="sp">Root service provider used for page activation.</param>
+        </member>
+        <member name="M:Hefi.Mobile.ViewModels.MainViewModel.LoadAsync">
+            Loads dashboard data (greeting, subheader, daily totals).
+        </member>
         <member name="T:Hefi.Mobile.Resource">
             <summary>
             Android Resource Designer class.
             Exposes the Android Resource designer assembly into the project Namespace.
             </summary>
+        </member>
+        <member name="T:MealsService">
+            <summary>
+            Provides access to meal-related endpoints in the backend API.
+            Handles fetching user meals, adding new meals, and calculating daily calorie totals.
+            </summary>
+        </member>
+        <member name="M:MealsService.GetMealsAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Retrieves all meals from the DB within an optional date range.
+            </summary>
+            <param name="from">Start date (inclusive, in UTC or ISO 8601 format).</param>
+            <param name="to">End date (exclusive, in UTC or ISO 8601 format).</param>
+            <returns>A list ofMealDto records representing meals in the range.</returns>
         </member>
     </members>
 </doc>

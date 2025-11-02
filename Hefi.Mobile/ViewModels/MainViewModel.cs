@@ -34,18 +34,17 @@ public sealed class MainViewModel : BindableObject
         // Navigates to AddMealPage 
         AddMealCommand = new Command(async () =>
         {
-            var sp = Application.Current!.Handler!.MauiContext!.Services;
-            var page = sp.GetRequiredService<AddMealPage>();
+            var page = _sp.GetRequiredService<AddMealPage>();
             await Application.Current!.MainPage!.Navigation.PushAsync(page);
         });
 
-
         // Navigates to AddWorkoutPage
         AddWorkoutCommand = new Command(async () =>
-        {
-            var page = ActivatorUtilities.CreateInstance<Hefi.Mobile.Pages.AddWorkoutPage>(_sp);
-            await Shell.Current.Navigation.PushAsync(page);
-        });
+       {
+           var page = _sp.GetRequiredService<AddWorkoutPage>();
+           await Application.Current!.MainPage!.Navigation.PushAsync(page);
+       });
+
 
         DailyTip = PickDailyTip();
     }

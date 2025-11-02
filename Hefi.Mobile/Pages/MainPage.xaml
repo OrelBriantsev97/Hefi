@@ -54,7 +54,7 @@
                                HorizontalOptions="Center"/>
                     </VerticalStackLayout>
 
-                    <!-- Water (placeholder with StepsToday) -->
+                    <!-- TODO:fix it,Water (placeholder with StepsToday) -->
                     <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" Spacing="4">
                         <Image Source="cup.png" HeightRequest="40" WidthRequest="40"/>
                         <Label Text="{Binding StepsToday, TargetNullValue=0, FallbackValue=0}"

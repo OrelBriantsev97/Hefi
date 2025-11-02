@@ -31,6 +31,8 @@ public sealed class AuthService : IAuthService
         var res = await _http.PostAsJsonAsync("auth/register", new { name, email, password });
         res.EnsureSuccessStatusCode();
 
+        var body = await res.Content.ReadAsStringAsync();//TODO:del later
+        System.Diagnostics.Debug.WriteLine($"[AuthService] Raw auth response: {body}"); // TODO:del later
         //extract and stores token pain
 
         var json = await res.Content.ReadFromJsonAsync<JsonElement>(_json);
@@ -40,6 +42,10 @@ public sealed class AuthService : IAuthService
             RefreshToken = json.GetProperty("refreshToken").GetString()!
         };
         await _tokens.SaveAsync(pair);
+        System.Diagnostics.Debug.WriteLine("[AuthService] Tokens saved via TokenService");
+        //TODO:del later:
+        var check = await _tokens.LoadAsync();
+        System.Diagnostics.Debug.WriteLine($"[AuthService] Read-back Access? {check?.AccessToken != null}, Refresh? {check?.RefreshToken != null}");
         return pair;
     }
 

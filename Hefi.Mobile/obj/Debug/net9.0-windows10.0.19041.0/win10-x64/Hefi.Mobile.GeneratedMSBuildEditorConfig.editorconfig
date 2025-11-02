@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Hefi.Mobile.Pages.AddWorko
 build_metadata.AdditionalFiles.TargetPath = Pages\AddWorkoutPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\AddWorkoutPage.xaml
 
+[C:/Users/orelb/Documents/Hefi/Hefi.Mobile/Pages/BarcodeScanPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Hefi.Mobile.Pages.BarcodeScanPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BarcodeScanPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BarcodeScanPage.xaml
+
 [C:/Users/orelb/Documents/Hefi/Hefi.Mobile/Pages/FoodAmountPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Hefi.Mobile.Pages.FoodAmountPopup.xaml

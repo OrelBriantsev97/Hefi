@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hefi.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b7cea01c92b3aedc39db072438d14c59bf0eb47")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hefi.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hefi.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

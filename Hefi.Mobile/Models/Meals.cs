@@ -45,3 +45,11 @@ public class MealDto
 
     public List<MealItemDto> Items { get; set; } = new();
 }
+
+public class MealCreateRequest
+{
+    public DateTime EatenAt { get; set; }
+    public string MealType { get; set; } = "Lunch";
+    public List<MealItemCreate> Items { get; set; } = new();
+    public string? PhotoPath { get; set; } 
+}

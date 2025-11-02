@@ -1,41 +1,102 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Hefi.Mobile"
+             xmlns:controls="clr-namespace:Hefi.Mobile.Controls"
              x:Class="Hefi.Mobile.Pages.AddMealPage"
-             Title="Add Meal">
+             Title="Add Meal"
+             BackgroundColor="#f7fbfb">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="CornerRadius" Value="14"/>
+            <Setter Property="BackgroundColor" Value="#32545c"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Padding" Value="14,10"/>
+        </Style>
 
-    <VerticalStackLayout Padding="20" Spacing="15">
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="#173036"/>
+            <Setter Property="PlaceholderColor" Value="#7a9aa0"/>
+            <Setter Property="Margin" Value="0,6"/>
+        </Style>
+        
+        <Style TargetType="Picker">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="#173036"/>
+            <Setter Property="TitleColor" Value="#7a9aa0"/>
+            <Setter Property="Margin" Value="0,6"/>
+        </Style>
 
-        <!-- Search entry -->
-        <Entry Placeholder="Search food"
-               Text="{Binding SearchQuery}"
-               ReturnType="Search"
-               ReturnCommand="{Binding SearchCommand}" />
+        <Style TargetType="Frame">
+            <Setter Property="CornerRadius" Value="16"/>
+            <Setter Property="HasShadow" Value="True"/>
+            <Setter Property="Padding" Value="14"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
 
-        <!-- Manual Search button -->
-        <Button Text="Search"
-                Command="{Binding SearchCommand}" />
 
-        <!-- Results list -->
-        <CollectionView x:Name="FoodResults"
-                        ItemsSource="{Binding Foods}"
-                        SelectionMode="Single"
-                        SelectionChangedCommand="{Binding SelectFoodCommand}"
-                        SelectionChangedCommandParameter="{Binding SelectedItem, Source={x:Reference FoodResults}}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Label Text="{Binding Description}" Padding="5" />
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="14">
+            <Frame>
+                <VerticalStackLayout Spacing="8">
+                    <Entry Placeholder="Food (e.g., 'Greek yogurt 0%')" 
+                 Text="{Binding SearchQuery}" />
+                    <Grid ColumnDefinitions="*,auto,auto" ColumnSpacing="10">
+                        <Entry Grid.Column="0" Placeholder="Amount" Keyboard="Numeric"
+                   Text="{Binding Amount}" />
+                        <Picker Grid.Column="1" Title="Unit" ItemsSource="{Binding Units}" 
+                    SelectedItem="{Binding SelectedUnit}" WidthRequest="110"/>
+                        <Picker Grid.Column="2" Title="Meal" ItemsSource="{Binding MealTypes}"
+                    SelectedItem="{Binding SelectedMealType}" WidthRequest="130"/>
+                    </Grid>
 
-        <!-- Grams input (optional if user adds manually) -->
-        <Entry Placeholder="Grams"
-               Keyboard="Numeric"
-               Text="{Binding Grams}" />
+                    <Grid ColumnDefinitions="*,auto,auto" ColumnSpacing="10" Margin="0,4,0,0">
+                        <Button Text="Search" Command="{Binding SearchCommand}" />
+                        <Button Text="Scan" Grid.Column="1" Command="{Binding ScanBarcodeCommand}" />
+                        <Button Text="Photo" Grid.Column="2" Command="{Binding PickPhotoCommand}" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Frame>
 
-        <!-- Save button -->
-        <Button Text="Save Meal"
-                Command="{Binding AddMealCommand}" />
+            <CollectionView ItemsSource="{Binding Foods}" x:Name="FoodsList" SelectionMode="None">
+                <CollectionView.EmptyView>
+                    <Label Text="Type a food, amount, and tap Search." 
+                 HorizontalOptions="Center" TextColor="#7a9aa0" Margin="0,20"/>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="0,6">
+                            <Grid ColumnDefinitions="auto,*" ColumnSpacing="14">
+                                <controls:ChartView WidthRequest="68" HeightRequest="68"
+                                         Protein="{Binding ScaledProtein}" 
+                                         Carbs="{Binding ScaledCarbs}" 
+                                         Fat="{Binding ScaledFat}" />
+                                <VerticalStackLayout Grid.Column="1" Spacing="4">
+                                    <Label Text="{Binding Label}" 
+                         TextColor="#173036" FontAttributes="Bold" FontSize="16"/>
+                                    <Label Text="{Binding Brand}" IsVisible="{Binding HasBrand}" 
+                         TextColor="#496b71" FontSize="12"/>
+                                    <Grid ColumnDefinitions="auto,auto,auto,auto" ColumnSpacing="12">
+                                        <Label Text="{Binding ScaledKcal, StringFormat='{0} kcal'}" FontAttributes="Bold"/>
+                                        <Label Grid.Column="1" Text="{Binding ScaledProtein, StringFormat='P {0}g'}"/>
+                                        <Label Grid.Column="2" Text="{Binding ScaledCarbs, StringFormat='C {0}g'}"/>
+                                        <Label Grid.Column="3" Text="{Binding ScaledFat, StringFormat='F {0}g'}"/>
+                                    </Grid>
+                                    <Grid ColumnDefinitions="*,auto" ColumnSpacing="10" Margin="0,6,0,0">
+                                        <Label Text="{Binding AmountUnitDisplay}" TextColor="#496b71"/>
+                                        <Button Grid.Column="1" Text="Add" 
+                            Command="{Binding BindingContext.AddMealCommand, Source={x:Reference Name=FoodsList}}"
+                            CommandParameter="{Binding .}" />
+                                    </Grid>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

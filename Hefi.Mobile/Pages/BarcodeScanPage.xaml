@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             x:Class="Hefi.Mobile.Pages.BarcodeScanPage"
+             Title="Scan Barcode"
+             BackgroundColor="Black">
+
+    <Grid>
+        <!-- Camera barcode reader view -->
+        <zxing:CameraBarcodeReaderView x:Name="CameraView"
+                                   BarcodesDetected="OnBarcodesDetected"
+                                   IsTorchOn="False"
+                                   IsDetecting="True"
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="FillAndExpand" />
+
+        <!-- Bottom overlay with controls -->
+        <Grid Padding="16" RowDefinitions="*,Auto">
+            <Grid />
+            <HorizontalStackLayout Grid.Row="1"
+                             HorizontalOptions="Center"
+                             Spacing="12">
+                <Button Text="Flip" Clicked="OnFlip" />
+                <Button Text="Torch" Clicked="OnTorch" />
+                <Button Text="Cancel" Clicked="OnCancel" />
+            </HorizontalStackLayout>
+        </Grid>
+    </Grid>
+
+</ContentPage>

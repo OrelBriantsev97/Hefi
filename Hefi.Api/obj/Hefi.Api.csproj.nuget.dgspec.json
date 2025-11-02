@@ -82,6 +82,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "ZXing.Net.Maui": {
+              "target": "Package",
+              "version": "[0.6.0, )"
+            },
+            "ZXing.Net.Maui.Controls": {
+              "target": "Package",
+              "version": "[0.6.0, )"
             }
           },
           "imports": [

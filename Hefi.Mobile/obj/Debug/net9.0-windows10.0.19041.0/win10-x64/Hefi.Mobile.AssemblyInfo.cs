@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hefi.Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3b7cea01c92b3aedc39db072438d14c59bf0eb47")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hefi.Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hefi.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

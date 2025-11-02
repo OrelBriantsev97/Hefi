@@ -6,6 +6,7 @@ using System.Text.Json;
 using Hefi.Mobile.Services;
 using Hefi.Mobile.Pages;
 using Hefi.Mobile.ViewModels;
+using ZXing.Net.Maui.Controls;
 
 
 namespace Hefi.Mobile;
@@ -22,7 +23,8 @@ public static class MauiProgram
 
         builder
             .UseMauiApp<App>()
-            .ConfigureFonts(_ => { });
+            .ConfigureFonts(_ => { })
+            .UseBarcodeReader(); // enable barcode reader
 
         builder.Logging.AddDebug();
 
@@ -51,6 +53,14 @@ public static class MauiProgram
         })
         .AddHttpMessageHandler<AuthHttpHandler>();
 
+        //register addmealviewmodel 
+        builder.Services.AddHttpClient<AddMealViewModel>(client =>
+        {
+            client.BaseAddress = new Uri(BaseUrl);
+            client.Timeout = TimeSpan.FromSeconds(15);
+        })
+        .AddHttpMessageHandler<AuthHttpHandler>();
+
         //register meals service
         builder.Services.AddHttpClient<MealsService>(client =>
         {
@@ -59,12 +69,26 @@ public static class MauiProgram
         })
         .AddHttpMessageHandler<AuthHttpHandler>();
 
+        //register workout service
+        builder.Services.AddHttpClient<WorkoutsService>(client =>
+        {
+            client.BaseAddress = new Uri(BaseUrl);
+            client.Timeout = TimeSpan.FromSeconds(15);
+        })
+        .AddHttpMessageHandler<AuthHttpHandler>();
+        
         // Register Pages and ViewModels
         builder.Services.AddTransient<LoadingPage>();
         builder.Services.AddTransient<LoginPage>();
+        builder.Services.AddTransient<DebugStoragePage>(); //TODO:del later
+        builder.Services.AddTransient<Hefi.Mobile.Pages.BarcodeScanPage>();
+
+
         builder.Services.AddTransient<SignUpPage>();
         builder.Services.AddTransient<MainViewModel>();
         builder.Services.AddTransient<MainPage>();
+        builder.Services.AddTransient<AddMealPage>();
+        builder.Services.AddTransient<AddWorkoutPage>();
 
 
         return builder.Build();
@@ -93,7 +117,7 @@ public sealed class ApiClient
         return dto;
     }
     //calls GET /users/me endpoint
-    public Task<HttpResponseMessage> GetMeAsync() => _http.GetAsync("users/me");
+    public Task<HttpResponseMessage> GetMeAsync() => _http.GetAsync("users/profile");
 
     //calls <c>GET /summary/{date:yyyy-MM-dd} endpoint
     public Task<HttpResponseMessage> GetSummaryAsync(DateTime date)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZpLdf3mzRG8=",
+  "dgSpecHash": "WIKNOWuTzyY=",
   "success": true,
   "projectFilePath": "C:\\Users\\orelb\\Documents\\Hefi\\Hefi.Api\\Hefi.Api.csproj",
   "expectedPackageFiles": [
@@ -52,7 +52,10 @@
     "C:\\Users\\orelb\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.3\\swashbuckle.aspnetcore.swaggergen.9.0.3.nupkg.sha512",
     "C:\\Users\\orelb\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.3\\swashbuckle.aspnetcore.swaggerui.9.0.3.nupkg.sha512",
     "C:\\Users\\orelb\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512",
-    "C:\\Users\\orelb\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\orelb\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\orelb\\.nuget\\packages\\zxing.net\\0.16.10\\zxing.net.0.16.10.nupkg.sha512",
+    "C:\\Users\\orelb\\.nuget\\packages\\zxing.net.maui\\0.6.0\\zxing.net.maui.0.6.0.nupkg.sha512",
+    "C:\\Users\\orelb\\.nuget\\packages\\zxing.net.maui.controls\\0.6.0\\zxing.net.maui.controls.0.6.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -55,6 +55,9 @@ C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\Swashbuckle.AspNetCore
 C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\zxing.dll
+C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\ZXing.Net.MAUI.dll
+C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\ZXing.Net.MAUI.Controls.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\ca\Microsoft.Maui.Controls.resources.dll
 C:\Users\orelb\Documents\Hefi\Hefi.Api\bin\Release\net9.0\cs\Microsoft.Maui.Controls.resources.dll
@@ -96,6 +99,7 @@ C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\Hefi.Api.AssemblyInfo.
 C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\Hefi.Api.csproj.CoreCompileInputs.cache
 C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\Hefi.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\Hefi.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\Hefi.Api.sourcelink.json
 C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\scopedcss\bundle\Hefi.Api.styles.css
 C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\staticwebassets.build.json
 C:\Users\orelb\Documents\Hefi\Hefi.Api\obj\Release\net9.0\staticwebassets.development.json
